@@ -1,0 +1,42 @@
+{
+    "request": {
+        "uri": "http://${OVERLAYIP_IP}:8536/openoapi/sbi-ipsec/v1/device/abc123/ports?portName=static",
+        "method": "get",
+        "headers": {
+            "Content-Type": "application/json",
+            "X-Driver-Parameter": "extSysID=${ESR_CNTRL_HTTP}"
+        },
+        "json": null
+    },
+    "response": {
+        "status": 200,
+        "json": {
+            "type": "object",
+            "properties": {
+                "errorCode": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "ipv4": {
+                            "type": "string"
+                        },
+                        "ipv6": {
+                            "type": "string"
+                        },
+                        "ipMask": {
+                            "type": "string"
+                        },
+                        "prefixLength": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "httpCode": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "request": {
+        "uri": "http://${OVERLAYIP_IP}:8536/openoapi/sbi-localsite/v1/device/abc123/subnet/1234",
+        "method": "get",
+        "headers": {
+            "Content-Type": "application/json",
+            "X-Driver-Parameter": "extSysID=${ESR_CNTRL_HTTP}"
+        },
+        "json": {}
+    },
+    "response": {
+        "status": 200,
+        "json": {
+            "type": "object",
+            "properties": {
+                "errorCode": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "neId": {
+                            "type": "string"
+                        },
+                        "controllerId": {
+                            "type": "string"
+                        },
+                        "networkId": {
+                            "type": "string"
+                        },
+                        "changedMode": {
+                            "type": "string"
+                        },
+                        "dhcpMode": {
+                            "type": "string"
+                        },
+                        "unlimit": {
+                            "type": "string"
+                        },
+                        "dhcp6Enable": {
+                            "type": "string"
+                        },
+                        "dhcp6Mode": {
+                            "type": "string"
+                        },
+                        "dnsServerMode": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "neId",
+                        "controllerId",
+                        "networkId",
+                        "changedMode",
+                        "dhcpMode",
+                        "dhcp6Enable",
+                        "dhcp6Mode",
+                        "dnsServerMode"
+                    ]
+                },
+                "httpCode": {
+                    "type": "integer"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "successed": {
+                    "type": "array",
+                    "items": {}
+                },
+                "fail": {
+                    "type": "array",
+                    "items": {}
+                }
+            }
+        }
+    }
+}

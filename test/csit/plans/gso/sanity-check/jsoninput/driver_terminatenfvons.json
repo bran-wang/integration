@@ -1,0 +1,21 @@
+{
+    "nodeTemplateName":"POP_NS",
+    "segments": [{
+        "serviceId":"gso_service_1",
+        "subServiceId":"1c771d38-ec96-4cf9-b024-563d2b95d64b",
+        "domainHost": "",
+        "nodeTemplateName": "POP_NS"
+    },
+    {
+        "serviceId":"gso_service_1",
+        "subServiceId":"gso_service.seg2",
+        "domainHost": "",
+        "nodeTemplateName": "POP_DC"
+    },
+    {
+        "serviceId":"gso_service_1",
+        "subServiceId":"gso_service.seg3",
+        "domainHost": "",
+        "nodeTemplateName": "ENTERPRISE2DC"
+    }]
+}

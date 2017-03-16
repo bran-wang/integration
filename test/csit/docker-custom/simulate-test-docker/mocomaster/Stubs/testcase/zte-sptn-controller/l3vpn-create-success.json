@@ -1,0 +1,24 @@
+[{
+    "request": {
+      "uri": "/restconf/data/sptn-service-l3vpn:service/snc-l3vpns",
+      "method": "post",
+      "headers": {
+        "ICTAuthentication": "21232F297A57A5A743894A0E4A801FC3"
+      }
+    },
+    "response": {
+      "status": 201,
+      "json": {
+        "command-result": {
+          "result": 1,
+          "success-resources": {
+            "success-resource-list": [{
+                "resouce-id": "668d75c3-dc21-45a4-8e0b-f2d49b617888"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

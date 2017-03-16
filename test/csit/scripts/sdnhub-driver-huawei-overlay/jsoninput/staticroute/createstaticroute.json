@@ -1,0 +1,47 @@
+{
+    "request": {
+        "uri": "http://${OVERLAYIP_IP}:8536/openoapi/sbi-route/v1/batch-create-static-routes",
+        "method": "post",
+        "headers": {
+            "Content-Type": "application/json",
+            "X-Driver-Parameter": "extSysID=${ESR_CNTRL_HTTP}"
+        },
+        "json": [{
+            "name": "staticRoute01",
+            "tenantId": "71244ad0-b4ea-41ed-969e-d5588b32fd5f",
+            "description": "create static route",
+            "deployStatus": "deploy",
+            "activeStatus": "none",
+            "runningStatus": "none",
+            "additionalInfo": "info",
+            "deviceId": "81244ad0-b4ea-41ed-969e-d5588b32fd5d",
+            "controllerId": "81244ad0-b4ea-41ed-969e-d5588b32fd4c",
+            "externalId": "1234",
+            "nbiNeRouteId": "123456",
+            "destIp": "{\"ipv4\":\"192.168.1.1\",\"ipv6\":\"\",\"ipMask\":\"16\",\"prefixLength\":\"\"}",
+            "enableDhcp": "false",
+            "nextHop": "{\"ipv4\":\"192.168.1.2\",\"ipv6\":\"\",\"ipMask\":\"16\",\"prefixLength\":\"\"}",
+            "outInterface": "outer",
+            "priority": "3",
+            "nqa": "nqa",
+            "id": "81244ad0-b4ea-41ed-969e-d5588b32fd5f",
+            "actionState": "normal",
+            "createTime": 0,
+            "updateTime": 0
+        }]
+    },
+    "response": {
+        "status": 200,
+        "json": {
+            "type": "object",
+            "properties": {
+                "errorCode": {
+                    "type": "string"
+                },
+                "httpCode": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

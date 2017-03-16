@@ -1,0 +1,15 @@
+{
+    "nodeTemplateName":"GSO_A",
+    "segments": [{
+        "serviceId":"gso_service_1",
+        "subServiceId":"2c771d38-ec96-4cf9-b024-563d2b95d64b",
+        "domainHost": "",
+        "nodeTemplateName": "GSO_A"
+    },
+    {
+        "serviceId":"gso_service_1",
+        "subServiceId":"gso_service.seg2",
+        "domainHost": "",
+        "nodeTemplateName": "GSO_B"
+    }]
+}

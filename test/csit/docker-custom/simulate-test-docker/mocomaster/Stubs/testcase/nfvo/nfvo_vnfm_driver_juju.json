@@ -1,0 +1,81 @@
+[
+    {
+        "request": {
+		    "method": "get",
+            "uri": "/openoapi/extsys/v1/vnfms/testVnfmId"
+        },
+        "response": {
+		"status": 200,
+		"json": {
+			"url":"http://127.0.0.1:8483",
+			"vnfmId":"testVnfmId",
+			"vnfdId":"testVnfdId",
+			"version":"1"
+		}
+    }
+	},
+	{
+        "request": {
+		    "method": "get",
+            "uri": "/openoapi/jujuvnfm/v1/vnfms/status",
+			"queries":{
+				"modelName": {"match": "[a-zA-Z0-9\\-\\_]{0,36}"}
+            }
+        },
+        "response": {
+		"status": 200,
+		"json": {
+			"retCode":"0",
+			"data":{
+				"vnfInstanceId":"",
+				"vnfInstanceName":"testVnfmId",
+				"vnfInstanceDescription":"testVnfdId",
+				"vnfdId":"1",
+				"vnfdPackageId":"",
+				"vnfProvider":"",
+				"vnfType":"",
+				"vnfStatus":""
+			}
+			
+		}
+    }},
+	{
+        "request": {
+            "method": "post",
+            "uri": "/openoapi/jujuvnfm/v1/vnfms/destroy"
+        },
+        "response": {
+		"status": 204,
+			"json": {
+				"retCode":"0",
+				"msg":"success",
+				"vnfId":"007vnfId"
+				
+			}
+        }
+    },
+    {
+        "request": {
+            "method": "post",
+            "uri": "/openoapi/jujuvnfm/v1/vnfms/deploy"
+        },
+        "response": {
+            "status": 201,
+			"json": {
+				"vnfId":"123vnfId",
+				"vnfInfo":{
+					"vnfInstanceId":"",
+					"vnfInstanceName":"testVnfmId",
+					"vnfInstanceDescription":"testVnfdId",
+					"vnfdId":"1",
+					"vnfdPackageId":"",
+					"vnfProvider":"",
+					"vnfType":"",
+					"vnfStatus":""
+				}
+				
+			}
+        }
+    }
+	
+]

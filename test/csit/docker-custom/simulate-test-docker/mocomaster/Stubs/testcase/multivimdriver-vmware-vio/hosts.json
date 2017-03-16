@@ -1,0 +1,18 @@
+[{
+        "request": {
+            "method": "get",
+            "uri":{"match": "/v2/.*/os-hosts"}
+        },
+        "response": {
+            "file": "./Stubs/testcase/multivimdriver-vmware-vio/hosts_response.json"
+        }
+    },{
+        "request": {
+            "method": "get",
+            "uri": {"match":"/v2/.*/os-hosts/vio-controller-0"}
+        },
+        "response": {
+            "file": "./Stubs/testcase/multivimdriver-vmware-vio/host_response.json"
+        }
+    }
+]

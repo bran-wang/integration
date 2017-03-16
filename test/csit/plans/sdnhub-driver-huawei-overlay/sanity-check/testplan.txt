@@ -1,0 +1,17 @@
+## Test suites are relative paths under [integration.git]/test/csit/tests/.
+## Place the suites in run order.
+sanity_test_drivers.robot
+sdnhub_simulator_registration.robot
+sdnhub-driver-huawei-overlay/startup/healthcheck.robot
+sdnhub-driver-huawei-overlay/startup/vxlan.robot
+sdnhub-driver-huawei-overlay/startup/nqa.robot
+sdnhub-driver-huawei-overlay/startup/staticroute.robot
+sdnhub-driver-huawei-overlay/startup/device.robot
+sdnhub-driver-huawei-overlay/startup/interfaceip.robot
+sdnhub-driver-huawei-overlay/startup/localsite.robot
+sdnhub-driver-huawei-overlay/startup/port.robot
+sdnhub-driver-huawei-overlay/startup/subnetbda.robot
+sdnhub-driver-huawei-overlay/startup/vlan.robot
+sdnhub-driver-huawei-overlay/startup/policyroute.robot
+sdnhub-driver-huawei-overlay/startup/subnet.robot
+sdnhub-driver-huawei-overlay/startup/ipsec.robot

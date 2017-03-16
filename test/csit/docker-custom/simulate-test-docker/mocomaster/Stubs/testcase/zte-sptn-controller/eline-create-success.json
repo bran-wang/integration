@@ -1,0 +1,34 @@
+[{
+    "request": {
+      "uri": "/restconf/operations/sptn-service-eline:create-snc-eline-tunnels",
+      "method": "post",
+      "headers": {
+        "ICTAuthentication": "21232F297A57A5A743894A0E4A801FC3"
+      }
+    },
+    "response": {
+      "status": 201,
+      "json": {
+        "output": {
+          "command-result": {
+            "result": 1,
+            "success-resources": {
+              "success-resource-list": [{
+                  "resouce-id": "668d75c3-dc21-45a4-8e0b-f2d49b617888"
+                }
+              ]
+            },
+            "failed-resources": {}
+          },
+          "ncd-resource-relations": {
+            "ncd-resource-relation": [{
+                "ncd-id": "6149dae6-9cc0-4ded-b132-cd28f7be55da",
+                "resource-id": "668d75c3-dc21-45a4-8e0b-f2d49b617888"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

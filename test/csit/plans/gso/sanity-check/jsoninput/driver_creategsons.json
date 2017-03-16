@@ -1,0 +1,33 @@
+{
+    "nodeTemplateName":"GSO_A",
+    "segments": [{
+        "serviceId":"gso_service_1",
+        "subServiceName":"gso_service.gso_a1",
+        "subServiceDesc":"gso_service_desc",
+        "domainHost": "",
+        "nodeTemplateName": "GSO_A",
+        "nodeType": "tosca.nodes.GSO",
+        "segments": [],
+        "nsParameters":{
+            "additionalParamForNs": {
+                "gso_a.param1": "value1",
+                "gso_a.param2": "value2"        
+            }
+        }
+    },
+    {
+        "serviceId":"gso_service_1",
+        "subServiceName":"gso_service.gso_b1",
+        "subServiceDesc":"gso_service_desc",
+        "domainHost": "",
+        "nodeTemplateName": "GSO_B",
+        "nodeType": "tosca.nodes.GSO",
+        "segments": [],
+        "nsParameters":{
+            "additionalParamForNs": {
+                "gso_b.param1": "value1",
+                "gso_b.param2": "value2"
+            }
+        }
+    }]        
+}
