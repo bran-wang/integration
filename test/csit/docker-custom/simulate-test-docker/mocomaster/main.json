@@ -69,6 +69,6 @@
 }, {
     "include": "Stubs/testcase/nfvo/nfvo_vnfm_driver_juju.json"
 },{
-    "include": "Stubs/testcase/multivimdriver-vmware-vio/hosts.json"
+    "include": "Stubs/testcase/multivimdriver-vmware-vio/config.json"
 }
 ]
